@@ -217,10 +217,10 @@ def gather_build_flags():
 ESP32_LARGE_PARTITIONS_CSV = """\
 nvs,      data, nvs,     0x009000, 0x005000,
 otadata,  data, ota,     0x00e000, 0x002000,
-app0,     app,  ota_0,   0x010000, 0x1C0000,
-app1,     app,  ota_1,   0x1D0000, 0x1C0000,
-eeprom,   data, 0x99,    0x390000, 0x001000,
-spiffs,   data, spiffs,  0x391000, 0x00F000
+app0,     app,  ota_0,   ,              6mb,
+app1,     app,  ota_1,   ,              6mb,
+eeprom,   data, 0x99,    ,         0x001000,
+spiffs,   data, spiffs,  ,         0x00F000,
 """
 
 
